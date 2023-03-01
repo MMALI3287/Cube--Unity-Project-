@@ -10,8 +10,8 @@ public class playerCollision : MonoBehaviour
         if (collisionInfo.collider.tag == "Obstacle")
         {
             GetComponent<PlayerMovement>().enabled = false;
+            FindObjectOfType<AudioManager>().Play("Crash");
             FindObjectOfType<GameManager>().EndGame();
-
         }
     }
 }

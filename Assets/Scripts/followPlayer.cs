@@ -5,7 +5,7 @@ public class followPlayer : MonoBehaviour
 {
     public Transform player;
     public Vector3 offset;
-    public float smoothSpeed = 0.225f;
+    public float smoothSpeed = 0.125f;
     void FixedUpdate()
     {
         Vector3 desiredPosition = player.position + offset;
